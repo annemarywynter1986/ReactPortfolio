@@ -1,17 +1,14 @@
-// Color Variables
-$primary: #8D53FF;
-$secondary: #CA6BE6;
-$background: #f8f8f8;
+$purple: #8D53FF;
+$pink: #CA6BE6;
+$white: #f8f8f8;
 $dark: #1f1f1f;
 $red: #FF6057;
-$orange: #FFBD2E;
+$yellow: #FFBD2E;
 $green: #27C93F;
-$gray: #c9c9c9;
+$lightgray: #c9c9c9;
 
-// Transition Variable
 $transition: all 250ms ease;
 
-// Shadow Class
 .shadowed {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.4);
 }

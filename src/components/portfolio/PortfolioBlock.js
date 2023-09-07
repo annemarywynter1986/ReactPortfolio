@@ -1,6 +1,6 @@
 import React from 'react';
 import IconLink from "./IconLink";
-import { Box } from "@mui/material";
+import {Box} from "@mui/material";
 
 const portfolioBlockStyles = {
   container: {
