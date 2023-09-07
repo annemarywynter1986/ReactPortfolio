@@ -72,17 +72,17 @@ export const info = {
         }
 
     ],
-    portfolio: [ // This is where your portfolio projects will be detailed
+    portfolio: [ 
         {
-            title: "Project 1",
-            live: "", //this should be a link to the live version of project
-            source: "", // this should be a link to the **repository** of the project
+            title: "Project 1 - Scrummy Food Recepies app",
+            live: "https://rmits.github.io/scrummy-food-recipe-app/", //this should be a link to the live version of project
+            source: "https://github.com/rmits/scrummy-food-recipe-app", // this should be a link to the **repository** of the project
             image: mock1
         },
         {
-            title: "Project 2",
-            live: "",
-            source: "",
+            title: "Project 2 - Adopt a pet app",
+            live: "https://project-two-20323fc10aa2.herokuapp.com/",
+            source: "https://github.com/Allicris/project-two",
             image: mock2
         },
         {
