@@ -4,6 +4,7 @@ import Toggler from "./home/Toggler";
 import {Link, useLocation} from "react-router-dom";
 import {Box} from "@mui/material";
 import {info} from "../info/Info";
+// import {ContactForm} from "./contact/ContactForm";
 
 const links = [
     {
@@ -26,6 +27,11 @@ const links = [
         name: 'Portfolio',
         to: '/portfolio',
         active: 'portfolio'
+    },
+    {
+        name: 'Contact',
+        to: '/contact',
+        active: 'contact'
     }
 ]
 
