@@ -3,7 +3,7 @@ import "./ContactForm.module.scss";
 
 
 
-function ContactForm() {
+function MyContactForm() {
   // Set initial state for name, email, message, and form errors
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -135,5 +135,5 @@ function ContactForm() {
   );
 }
 
-export default ContactForm;
+export default MyContactForm;
 
