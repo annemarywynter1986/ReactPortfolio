@@ -138,7 +138,7 @@ SO THAT I can assess whether they're a good candidate for an open position
 1. Add a blog section to showcase my thoughts and experiences.
 2. Implement a search functionality for easier navigation through work samples.
 3. Incorporate testimonials from previous clients or employers.
-4. Integrate a dark mode toggle for better accessibility and user experience.
+
 
 ## Author
 
