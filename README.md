@@ -82,8 +82,18 @@ SO THAT I can assess whether they're a good candidate for an open position
 [GitHub Repository](https://github.com/annemarywynter1986/ReactPortfolio.git) 
 
 ### React Portfolio Screenshots
+<img width="1676" alt="Screen Shot 2023-09-10 at 5 59 23 PM" src="https://github.com/annemarywynter1986/ReactPortfolio/assets/130412307/9379a034-6f93-4575-aad3-3bb0b78d2fd3">
 
-<!-- Include screenshots or GIFs of portfolio here -->
+<img width="1680" alt="Screen Shot 2023-09-10 at 5 59 28 PM" src="https://github.com/annemarywynter1986/ReactPortfolio/assets/130412307/d7f3db53-ed96-4991-8789-15823f3a423e">
+
+<img width="1670" alt="Screen Shot 2023-09-10 at 6 00 03 PM" src="https://github.com/annemarywynter1986/ReactPortfolio/assets/130412307/5e51cd94-e7c9-4e75-a285-59f0fe7a5aef">
+
+<img width="1677" alt="Screen Shot 2023-09-10 at 6 00 18 PM" src="https://github.com/annemarywynter1986/ReactPortfolio/assets/130412307/85868305-3a66-4468-ac92-78b2fab05996">
+
+<img width="1673" alt="Screen Shot 2023-09-10 at 6 00 25 PM" src="https://github.com/annemarywynter1986/ReactPortfolio/assets/130412307/44b8eefb-29a0-47b1-86dd-9787368faeb2">
+
+
+
 
 ### Installation Process
 
