@@ -4,8 +4,10 @@ import me from '../../img/self.png';
 import classNames from 'classnames';
 import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
-import {Box} from "@mui/material";
-import {info} from "../../info/Info";
+import { Box } from "@mui/material";
+import { info } from "../../info/Info";
+import Footer from '../footer/Footer'; // Import the Footer component here
+
 
 const Home = () => {
   const avatarStyles = {
@@ -63,7 +65,7 @@ const Home = () => {
       <Box>
         <h1>
           Hello, I am <span style={headerStyles}>{info.firstName}</span>
-          <span className={Style.hand}>🤭</span>
+          <span className={Style.hand}>🤝</span>
         </h1>
         <h2>I'm {info.position}.</h2>
         <Box component="ul" p="0.8rem">

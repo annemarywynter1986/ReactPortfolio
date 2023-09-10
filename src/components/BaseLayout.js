@@ -1,17 +1,17 @@
-import React, {useEffect, useState} from 'react';
-import Style from './BaseLayout.module.scss'
-import Navbar from "./Navbar";
-import Home from "./home/Home";
-import About from "./about/About";
-import Portfolio from "./portfolio/Portfolio";
-import MyContactForm from "./contact/MyContactForm.js";
-import {Route, Routes} from "react-router-dom";
-import {Box, Grid} from "@mui/material";
+import React, { useEffect, useState } from 'react';
+import Style from './BaseLayout.module.scss';
+import Navbar from './Navbar';
+import Home from './home/Home';
+import About from './about/About';
+import Portfolio from './portfolio/Portfolio';
+import Footer from './footer/Footer';
+import MyContactForm from './contact/MyContactForm.js';
+import { Route, Routes } from 'react-router-dom';
+import { Box, Grid } from '@mui/material';
+import PropTypes from 'prop-types'; // Import PropTypes
+import { socials } from './footer/Footer';
 
-
-
-
-export default function BaseLayout() {
+function BaseLayout() {
   const [darkMode, setDarkMode] = useState(false);
 
   const handleToggleDarkMode = () => {
@@ -26,6 +26,7 @@ export default function BaseLayout() {
   }, []);
 
   const containerClassName = darkMode ? Style.dark : Style.light;
+
 
   return (
     <Box className={containerClassName}>
@@ -42,11 +43,19 @@ export default function BaseLayout() {
           </Routes>
         </Grid>
         <Grid item>
-          <Box component="footer" display="flex" flexDirection="column" alignItems="center" py="1.5rem" sx={{ opacity: 0.7 }} width="100%">
-           
+          <Box component="footer" display="flex" flexDirection="column" alignItems="center" py="1.5rem" sx={{ opacity: 0.7 }} width="100%" >
+            {/* Include the Footer component here and pass the socials prop */}
+            <Footer socials={socials} />
           </Box>
         </Grid>
       </Grid>
     </Box>
   );
 }
+
+BaseLayout.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+  handleToggleDarkMode: PropTypes.func.isRequired,
+};
+
+export default BaseLayout;
