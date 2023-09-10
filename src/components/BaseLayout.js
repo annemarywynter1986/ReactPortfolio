@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Box, Grid } from '@mui/material';
 import PropTypes from 'prop-types'; // Import PropTypes
 import { socials } from './footer/Footer';
+import Resume from './resume/Resume';
 
 function BaseLayout() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,6 +41,7 @@ function BaseLayout() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/portfolio" element={<Portfolio />} />
             <Route exact path="/contact" element={<MyContactForm />} />
+            <Route exact path="/resume" element={<Resume />} />
           </Routes>
         </Grid>
         <Grid item>

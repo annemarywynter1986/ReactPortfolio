@@ -32,6 +32,11 @@ const links = [
         name: 'Contact',
         to: '/contact',
         active: 'contact'
+    },
+    {
+        name: 'Resume',
+        to: '/resume',
+        active: 'resume'
     }
 ]
 
