@@ -2,6 +2,9 @@ import self from "../img/self.png"
 import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock3.png"
+import mock4 from "../img/mock4.png"
+import mock5 from "../img/mock5.png"
+import mock6 from "../img/mock6.png"
 
 
 
@@ -87,9 +90,27 @@ export const info = {
         },
         {
             title: "Project 3",
+            live: "https://annemarywynter1986.github.io/codeQuiz/game.html",
+            source: "https://github.com/annemarywynter1986/codeQuiz.git",
+            image: mock3
+        },
+        {
+            title: "Project 4",
+            live: "https://annemarywynter1986.github.io/WeatherDashboard/",
+            source: "https://github.com/annemarywynter1986/WeatherDashboard.git",
+            image: mock4
+        },
+        {
+            title: "Project 5",
+            live: "https://annemarywynter1986.github.io/WorkDayScheduler/",
+            source: "https://github.com/annemarywynter1986/WorkDayScheduler.git",
+            image: mock5
+        },
+        {
+            title: "Project 6",
             live: "",
             source: "",
-            image: mock3
+            image: mock6
         }
        
     ]

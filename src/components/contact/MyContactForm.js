@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.module.scss";
 
-
-
 function MyContactForm() {
   // Set initial state for name, email, message, and form errors
   const [name, setName] = useState("");
@@ -136,4 +134,3 @@ function MyContactForm() {
 }
 
 export default MyContactForm;
-

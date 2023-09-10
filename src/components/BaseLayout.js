@@ -44,7 +44,7 @@ function BaseLayout() {
         </Grid>
         <Grid item>
           <Box component="footer" display="flex" flexDirection="column" alignItems="center" py="1.5rem" sx={{ opacity: 0.7 }} width="100%" >
-            {/* Include the Footer component here and pass the socials prop */}
+            {/* Included the Footer component here and pass the socials prop */}
             <Footer socials={socials} />
           </Box>
         </Grid>
