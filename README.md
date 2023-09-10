@@ -115,7 +115,6 @@ SO THAT I can assess whether they're a good candidate for an open position
 - dotenv: [16.0.3](https://www.npmjs.com/package/dotenv)
 - Express: [4.18.2](https://www.npmjs.com/package/express)
 - GraphQL: [16.6.0](https://www.npmjs.com/package/graphql)
-- JsonWebToken: [9.0.0](https://www.npmjs.com/package/jsonwebtoken)
 - Mongodb: [5.1.0](https://www.npmjs.com/package/mongodb)
 - Mongoose: [7.0.3](https://www.npmjs.com/package/mongoose)
 - React: [18.2.0](https://www.npmjs.com/package/react)
@@ -125,8 +124,6 @@ SO THAT I can assess whether they're a good candidate for an open position
 - MongoDB: [5.1.0](https://www.mongodb.com)
 - Mongoose ODM: [7.0.3](https://mongoosejs.com)
 - JWT: [9.0.0](https://jwt.io)
-- Heroku: [Website](https://www.heroku.com/platform)
-- License Badge: [Shields.io](https://shields.io/)
 - Visual Studio Code: [Website](https://code.visualstudio.com/)
 
 ### What I Learned
