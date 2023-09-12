@@ -1,4 +1,5 @@
 {
+  "homepage": "http:///annemarywynter1986.github.io/ReactPortfolio",
   "name": "portfolio-react",
   "version": "2.0.0",
   "private": true,
@@ -30,9 +31,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+   
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "github-pages": "^3.0.2"
   }
 }
