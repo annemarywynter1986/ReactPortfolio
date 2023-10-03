@@ -109,7 +109,7 @@ export const info = {
         {
             title: "Project 6",
             live: "",
-            source: "",
+            source: "https://github.com/Allicris/nail-booking-site.git",
             image: mock6
         }
        
