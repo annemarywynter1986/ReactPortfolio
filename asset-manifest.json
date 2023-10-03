@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/ReactPortfolio/static/css/main.c71dbf36.css",
-    "main.js": "/ReactPortfolio/static/js/main.8525451e.js",
-    "static/media/mock1.png": "/ReactPortfolio/static/media/mock1.9220b0721dda1d93a68c.png",
-    "static/media/mock2.png": "/ReactPortfolio/static/media/mock2.97b33f150979a280796d.png",
+    "main.js": "/ReactPortfolio/static/js/main.74575b95.js",
     "static/media/self.png": "/ReactPortfolio/static/media/self.e49641690179c9916ba2.png",
-    "static/media/mock5.png": "/ReactPortfolio/static/media/mock5.0871b7f7f4e18cac43d4.png",
-    "static/media/mock3.png": "/ReactPortfolio/static/media/mock3.e06cbb386a55f547309a.png",
-    "static/media/mock4.png": "/ReactPortfolio/static/media/mock4.93c3e473f03aee35fff4.png",
+    "static/media/mock1.png": "/ReactPortfolio/static/media/mock1.5a1a9176e8cb4ca74f9c.png",
+    "static/media/mock2.png": "/ReactPortfolio/static/media/mock2.f8dfc98b6503208efae9.png",
+    "static/media/mock6.png": "/ReactPortfolio/static/media/mock6.621bab3edb105b6abeb2.png",
+    "static/media/mock4.png": "/ReactPortfolio/static/media/mock4.1678eba7efd6fe9f9426.png",
+    "static/media/mock5.png": "/ReactPortfolio/static/media/mock5.d2e8adb5dadf28c667b2.png",
     "static/media/Anne Mary Software Developer Resume for webapp.pdf": "/ReactPortfolio/static/media/Anne Mary Software Developer Resume for webapp.54d8ea0cc553fad2b67d.pdf",
-    "static/media/mock6.png": "/ReactPortfolio/static/media/mock6.faf843beaffaa9716597.png",
+    "static/media/mock3.png": "/ReactPortfolio/static/media/mock3.0a2fa2b2f6b1316513d1.png",
     "index.html": "/ReactPortfolio/index.html",
     "main.c71dbf36.css.map": "/ReactPortfolio/static/css/main.c71dbf36.css.map",
-    "main.8525451e.js.map": "/ReactPortfolio/static/js/main.8525451e.js.map"
+    "main.74575b95.js.map": "/ReactPortfolio/static/js/main.74575b95.js.map"
   },
   "entrypoints": [
     "static/css/main.c71dbf36.css",
-    "static/js/main.8525451e.js"
+    "static/js/main.74575b95.js"
   ]
 }
