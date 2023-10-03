@@ -13,8 +13,8 @@ export default function About() {
 
   function aboutMeText() {
     const lines = [
-      `${firstName}${info.lastName.toLowerCase()} $ cat about${firstName}`,
-      `about${firstName} ${Style.green}(main) $ ${info.bio}`,
+      `${firstName}${info.lastName.toLowerCase()} $ about ${firstName}`,
+      ` ${info.bio}`,
     ];
 
     return formatText(lines);
@@ -26,7 +26,7 @@ export default function About() {
 
     const lines = [
       `${firstName}${info.lastName.toLowerCase()} $ cd skills/tools`,
-      `skills/tools ${Style.green}(main) $`,
+      `skills/tools (main) $`,
       'Proficient With',
       ...proficientSkills,
       'Exposed To',
@@ -41,7 +41,7 @@ export default function About() {
 
     const lines = [
       `${firstName}${info.lastName.toLowerCase()} $ cd hobbies/interests`,
-      `hobbies/interests ${Style.green}(main) $`,
+      `hobbies/interests $`,
       ...hobbiesList,
     ];
 
