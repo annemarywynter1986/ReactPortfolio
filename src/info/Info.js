@@ -108,7 +108,7 @@ export const info = {
         },
         {
             title: "Project 6",
-            live: "https://annemarywynter1986.github.io/",
+            live: "https://nail-booking-site-285746c99724.herokuapp.com",
             source: "https://github.com/Allicris/nail-booking-site.git",
             image: mock6
         }
