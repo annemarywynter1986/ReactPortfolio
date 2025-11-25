@@ -1,4 +1,4 @@
-@import "../../variables.modules.scss";
+@use "../../variables.modules.scss" as *;
 
 h1 {
   font-size: 2rem;
