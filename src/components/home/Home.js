@@ -1,17 +1,16 @@
 import React from 'react';
 import Style from './Home.module.scss';
-import me from '../../img/self.png';
 import classNames from 'classnames';
 import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
-import Footer from '../footer/Footer'; // Import the Footer component here
 
 
 const Home = () => {
   const avatarStyles = {
     background: info.gradient,
+    objectFit: 'cover',
   };
 
   const avatarSize = {
@@ -49,33 +48,31 @@ const Home = () => {
 
   return (
     <Box component="main" display="flex" {...mainContainerStyles}>
-      <Box
-        className={classNames(Style.avatar, Style.shadowed)}
-        alt="image of developer"
-        style={avatarStyles}
-        component="img"
-        src={me}
-        width={avatarSize}
-        height={avatarSize}
-        borderRadius="50%"
-        p="0.75rem"
-        mb={{ xs: '1rem', sm: 0 }}
-        mr={{ xs: 0, md: '2rem' }}
-      />
+      {info.selfPortrait && (
+        <Box
+          className={classNames(Style.avatar, Style.shadowed)}
+          alt="image of developer"
+          style={avatarStyles}
+          component="img"
+          src={info.selfPortrait}
+          width={avatarSize}
+          height={avatarSize}
+          borderRadius="50%"
+          p="0.75rem"
+          mb={{ xs: '1rem', sm: 0 }}
+          mr={{ xs: 0, md: '2rem' }}
+        />
+      )}
       <Box>
         <h1>
           Hello, I am <span style={headerStyles}>{info.firstName}</span>
-          <span className={Style.hand}>🤝</span>
         </h1>
-        <h2>I'm {info.position}.</h2>
         <Box component="ul" p="0.8rem">
           {renderMiniBioList()}
-        </Box>
-        <Box display="flex" gap="1.5rem" justifyContent="center" fontSize={{ xs: '2rem', md: '2.5rem' }}>
+        </Box >
           {renderSocialIcons()}
         </Box>
       </Box>
-    </Box>
   );
 };
 

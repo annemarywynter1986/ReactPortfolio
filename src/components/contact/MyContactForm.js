@@ -1,136 +1,194 @@
-import React, { useState } from "react";
-import "./ContactForm.module.scss";
+import { useState, useRef } from 'react';
+import {
+  RichTextEditor,
+  MenuControlsContainer,
+  MenuSelectHeading,
+  MenuDivider,
+  MenuButtonBold,
+  MenuButtonItalic,
+  MenuButtonStrikethrough,
+  MenuButtonCode,
+  MenuButtonBulletedList,
+  MenuButtonOrderedList,
+  MenuButtonBlockquote,
+  MenuButtonCodeBlock,
+} from 'mui-tiptap';
+import StarterKit from '@tiptap/starter-kit';
+import { Box, Typography, TextField, Button } from '@mui/material';
+import { info } from '../../info/Info';
 
-function MyContactForm() {
-  // Set initial state for name, email, message, and form errors
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [nameError, setNameError] = useState(false);
-  const [emailError, setEmailError] = useState(false);
-  const [messageError, setMessageError] = useState(false);
-  const [messageSent, setMessageSent] = useState(false);
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+  });
 
-  // Handle name input changes
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-    setNameError(false);
+  const rteRef = useRef(null);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  // Handle email input changes
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-    setEmailError(false);
-  };
-
-  // Handle message input changes
-  const handleMsgChange = (e) => {
-    setMessage(e.target.value);
-    setMessageError(false);
-  };
-
-  // Validate email format using regex
-  const validateEmail = (email) => {
-    return /\S+@\S+\.\S+/.test(email);
-  };
-
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    let valid = true;
+    const messageContent = rteRef.current?.editor?.getHTML() || '';
 
-    // Validate input fields and set errors if necessary
-    if (name.length <= 5) {
-      setNameError(true);
-      valid = false;
-    }
-    if (!validateEmail(email)) {
-      setEmailError(true);
-      valid = false;
-    }
-    if (message.length < 150) {
-      setMessageError(true);
-      valid = false;
-    }
+    console.log('Form submitted:', {
+      ...formData,
+      message: messageContent,
+    });
 
-    // If all fields are valid, log form data and reset inputs
-    if (valid) {
-      console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
-      setName("");
-      setEmail("");
-      setMessage("");
-      setMessageSent(true);
-    }
+    alert('Thank you for your message!');
+
+    setFormData({
+      name: '',
+      email: '',
+    });
+    rteRef.current?.editor?.commands.setContent('');
   };
 
-  // Render the contact form
-  return (
-    <section id="contact" className="contact-section">
-      <div className="contact-container">
-        <h2 className="contact-header">Contact Me</h2>
-        {messageSent && (
-          <div className="contact-alert contact-success" role="alert">
-            Your message has been sent successfully!
-          </div>
-        )}
-        <form onSubmit={handleSubmit} noValidate className="contact-form">
-          <div className="form-group">
-            <label htmlFor="name" className="contact-label">
-              Name:
-            </label>
-            <input
-              type="text"
-              className={`contact-input ${nameError ? "is-invalid" : ""}`}
-              id="name"
-              name="name"
-              value={name}
-              onChange={handleNameChange}
-              required
-            />
-            {nameError && (
-              <div className="contact-error">Name must be more than 5 characters</div>
-            )}
-          </div>
-          <div className="form-group">
-            <label htmlFor="email" className="contact-label">
-              Email:
-            </label>
-            <input
-              type="email"
-              className={`contact-input ${emailError ? "is-invalid" : ""}`}
-              id="email"
-              name="email"
-              value={email}
-              onChange={handleEmailChange}
-              required
-            />
-            {emailError && (
-              <div className="contact-error">A valid email is required</div>
-            )}
-          </div>
-          <div className="form-group">
-            <label htmlFor="message" className="contact-label">
-              Message:
-            </label>
-            <textarea
-              className={`contact-input ${messageError ? "is-invalid" : ""}`}
-              id="message"
-              name="message"
-              rows="5"
-              value={message}
-              onChange={handleMsgChange}
-            />
-            {messageError && (
-              <div className="contact-error">Message must be at least 150 characters</div>
-            )}
-          </div>
-          <button type="submit" className="contact-button">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </section>
-  );
-}
+  
 
-export default MyContactForm;
+  return (
+    <Box
+      component="form"
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: 3,
+        border: `1px solid ${info.baseColor}`,
+        borderRadius: 2,
+        maxWidth: 600,
+        margin: 'auto',
+        mt: 5,
+      }}
+      noValidate
+      autoComplete="off"
+      onSubmit={handleSubmit}
+    >
+      <Typography variant="h4" gutterBottom>
+        Contact Anne Mary Wynter
+      </Typography>
+
+      <TextField
+        label="Name"
+        variant="outlined"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        fullWidth
+        required
+        sx={{
+          mb: 2,
+          '& .MuiOutlinedInput-root': {
+            backgroundColor: '#ffffff',
+          },
+        }}
+      />
+
+      <TextField
+        label="Email"
+        variant="outlined"
+        name="email"
+        type="email"
+        value={formData.email}
+        onChange={handleChange}
+        fullWidth
+        required
+        sx={{
+          mb: 2,
+          '& .MuiOutlinedInput-root': {
+            backgroundColor: '#ffffff',
+          },
+        }}
+      />
+
+      <Box sx={{ width: '100%', mb: 2 }}>
+        <Typography
+          variant="body2"
+          sx={{
+            mb: 1,
+            color: info.baseColor,
+            fontWeight: 600,
+          }}
+        >
+        </Typography>
+        <RichTextEditor
+        placeholder="Type your message here..."
+          ref={rteRef}
+          extensions={[
+            StarterKit.configure({
+              bold: true,
+              italic: true,
+              strike: true,
+              code: true,
+              heading: {
+                levels: [1, 2, 3],
+              },
+              bulletList: true,
+              orderedList: true,
+              blockquote: true,
+              codeBlock: true,
+            }),
+          ]}
+          content=""
+          renderControls={() => (
+            <MenuControlsContainer>
+              <MenuSelectHeading />
+              <MenuDivider />
+              <MenuButtonBold />
+              <MenuButtonItalic />
+              <MenuButtonStrikethrough />
+              <MenuButtonCode />
+              <MenuDivider />
+              <MenuButtonBulletedList />
+              <MenuButtonOrderedList />
+              <MenuButtonBlockquote />
+              <MenuButtonCodeBlock />
+            </MenuControlsContainer>
+          )}
+          sx={{
+            width: '100%',
+            minHeight: 200,
+            '& .MuiTiptap-RichTextEditor-root': {
+              backgroundColor: '#ffffff',
+            },
+            '& .MuiTiptap-FieldContainer-root': {
+              backgroundColor: '#ffffff',
+            },
+            '& .MuiTiptap-RichTextContent-root': {
+              padding: 2,
+               backgroundColor: '#ffffff',
+            },
+            '& .ProseMirror': {
+              minHeight: 200,
+              padding: 0,
+              backgroundColor: '#ffffff',
+              color: '#000000',
+            },
+          }}
+        />
+      </Box>
+
+      <Button
+        variant="contained"
+        type="submit"
+        sx={{
+          mt: 2,
+          background: info.gradient,
+          '&:hover': {
+            opacity: 0.9,
+          },
+        }}
+      >
+        Send Message
+      </Button>
+    </Box>
+  );
+};
+
+export default ContactForm;
