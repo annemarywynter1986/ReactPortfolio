@@ -26,50 +26,11 @@ The main objective of this project is to create a single-page application portfo
 3. Include a contact form with validation and error notifications.
 4. Integrate links to Anne Mary Wynter's resume and social media profiles.
 
-### Assigned User Story:
-
-```
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
-```
-
-
-### Acceptance Criteria:
-
-- GIVEN a single-page application portfolio for a web developer
-- WHEN I load the portfolio
-- THEN I am presented with a page containing a header, a section for content, and a footer
-- WHEN I view the header
-- THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
-- WHEN I view the navigation titles
-- THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
-- WHEN I click on a navigation title
-- THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
-- WHEN I load the portfolio the first time
-- THEN the About Me title and section are selected by default
-- WHEN I am presented with the About Me section
-- THEN I see a recent photo or avatar of the developer and a short bio about them
-- WHEN I am presented with the Portfolio section
-- THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
-- WHEN I am presented with the Contact section
-- THEN I see a contact form with fields for a name, an email address, and a message
-- WHEN I move my cursor out of one of the form fields without entering text
-- THEN I receive a notification that this field is required
-- WHEN I enter text into the email address field
-- THEN I receive a notification if I have entered an invalid email address
-- WHEN I am presented with the Resume section
-- THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
-- WHEN I view the footer
-- THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
-
-## React Portfolio
 
 ### Usage Instructions
 
 1. Navigate to the deployed application link.
 2. Click on the navigation titles to switch between sections.
-3. View Anne Mary Wynter's work samples in the Portfolio section.
 4. Fill out the contact form in the Contact section.
 5. Download Anne Mary Wynter's resume in the Resume section.
 
@@ -80,19 +41,6 @@ SO THAT I can assess whether they're a good candidate for an open position
 ### GitHub Repository
 
 [GitHub Repository](https://github.com/annemarywynter1986/ReactPortfolio.git) 
-
-### React Portfolio Screenshots
-<img width="1676" alt="Screen Shot 2023-09-10 at 5 59 23 PM" src="https://github.com/annemarywynter1986/ReactPortfolio/assets/130412307/9379a034-6f93-4575-aad3-3bb0b78d2fd3">
-
-<img width="1680" alt="Screen Shot 2023-09-10 at 5 59 28 PM" src="https://github.com/annemarywynter1986/ReactPortfolio/assets/130412307/d7f3db53-ed96-4991-8789-15823f3a423e">
-
-<img width="1670" alt="Screen Shot 2023-09-10 at 6 00 03 PM" src="https://github.com/annemarywynter1986/ReactPortfolio/assets/130412307/5e51cd94-e7c9-4e75-a285-59f0fe7a5aef">
-
-<img width="1677" alt="Screen Shot 2023-09-10 at 6 00 18 PM" src="https://github.com/annemarywynter1986/ReactPortfolio/assets/130412307/85868305-3a66-4468-ac92-78b2fab05996">
-
-<img width="1673" alt="Screen Shot 2023-09-10 at 6 00 25 PM" src="https://github.com/annemarywynter1986/ReactPortfolio/assets/130412307/44b8eefb-29a0-47b1-86dd-9787368faeb2">
-
-
 
 
 ### Installation Process
@@ -125,20 +73,6 @@ SO THAT I can assess whether they're a good candidate for an open position
 - Mongoose ODM: [7.0.3](https://mongoosejs.com)
 - JWT: [9.0.0](https://jwt.io)
 - Visual Studio Code: [Website](https://code.visualstudio.com/)
-
-### What I Learned
-
-1. Building a single-page application using React.
-2. Implementing smooth navigation using React Router.
-3. Creating a responsive and visually appealing interface.
-4. Integrating form validation and error handling in React applications.
-
-### Continued Development
-
-1. Add a blog section to showcase my thoughts and experiences.
-2. Implement a search functionality for easier navigation through work samples.
-3. Incorporate testimonials from previous clients or employers.
-
 
 ## Author
 
