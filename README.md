@@ -1,42 +1,7 @@
-# React Portfolio
-
-## Description
-
-The GitHub-Pages launched application showcases Anne Mary Wynter's React Portfolio, which contains (6) highlighted projects from her Full-Stack Developer boot camp experience at Rutgers University.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [The Challenge](#the-challenge)
-- [Usage Information](#usage-information)
-- [Installation Process](#installation-process)
-- [Built With](#built-with)
-- [What I Learned](#what-i-learned)
-- [Continued Development](#continued-development)
-- [Author](#author)
-
-## Overview
-
-### The Challenge
-
-The main objective of this project is to create a single-page application portfolio for a web developer, showcasing Anne Mary Wynter's experience and proficiency in building React applications.
-
-1. Create a dynamic and user-friendly interface.
-2. Implement smooth navigation between different sections of the portfolio.
-3. Include a contact form with validation and error notifications.
-4. Integrate links to Anne Mary Wynter's resume and social media profiles.
-
-
-### Usage Instructions
-
-1. Navigate to the deployed application link.
-2. Click on the navigation titles to switch between sections.
-4. Fill out the contact form in the Contact section.
-5. Download Anne Mary Wynter's resume in the Resume section.
 
 ### Deployed GitHub-Pages Application Link
 
-[Deployed React Portfolio](https://annemarywynter1986.github.io/ReactPortfolio/)
+[Deployed React Portfolio]([https://annemarywynter1986.github.io/ReactPortfolio/](https://annemarywynter1986.github.io/))
 
 ### GitHub Repository
 
